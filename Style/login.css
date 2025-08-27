@@ -1,0 +1,85 @@
+    body {
+      background: #f6f4d2;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overflow-x: hidden;
+    }
+
+    /* container */
+    .auth-container {
+      position: relative;
+      max-width: 450px;
+      width: 100%;
+      margin: auto;
+    }
+
+    /* box style */
+    .auth-box {
+      background: #fff;
+      padding: 35px;
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      animation: fadeSlideUp 0.8s ease;
+    }
+
+    .auth-box h3 {
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 25px;
+      color: #0b2815;
+    }
+
+    /* inputs */
+    .form-control, .form-select {
+      padding: 12px 14px;
+      font-size: 1rem;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+    .form-control:focus, .form-select:focus {
+      box-shadow: 0 0 0 4px rgba(21,128,61,0.2);
+      border-color: #15803d;
+    }
+
+    /* buttons */
+    .btn-custom {
+      background-color: #15803d;
+      border: none;
+      padding: 12px;
+      font-weight: bold;
+      border-radius: 10px;
+      width: 100%;
+      color: #fff !important;
+      transition: all 0.3s ease;
+    }
+    .btn-custom:hover,
+    .btn-custom:focus {
+      background-color: #166534;
+      color: #fff !important;
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px rgba(21,128,61,0.35);
+    }
+
+    /* links */
+    .extra-links {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      background: #f9f9f9;
+      padding: 15px 0;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #555;
+      margin-top: auto;
+    }
+
+    /* Fade Slide Animation */
+    @keyframes fadeSlideUp {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
