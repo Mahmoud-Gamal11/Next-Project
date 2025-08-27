@@ -7,6 +7,11 @@ function toggleForms() {
   document.getElementById("loginBox").classList.toggle("d-none");
   document.getElementById("registerBox").classList.toggle("d-none");
 }
+// login function 
+
+function goToAnotherPage(){
+  window.location.href = "/Project/Pages/User Management.html"; 
+}
 
 // Function to show toast messages
 function showToast(message, type = "danger") {

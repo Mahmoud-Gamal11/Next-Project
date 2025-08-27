@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management Section</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Project/Style/User Management.css">
+</head>
+<body class="font-sans">
+    <div id="notification" class="notification hidden"></div>
+    <section id="user-management" class="p-8 max-w-4xl mx-auto">
+        <h2 class="text-2xl font-bold mb-4">User Management</h2>
+        <form id="add-user-form" class="space-y-4 mb-6">
+            <input type="email" id="add-email" placeholder="Enter User Email" class="w-full p-3 border rounded dark:bg-gray-700 dark:text-white" required>
+            <input type="password" id="add-password" placeholder="Set User Password" class="w-full p-3 border rounded dark:bg-gray-700 dark:text-white" required>
+            <select id="add-role" class="w-full p-3 border rounded dark:bg-gray-700 dark:text-white" required>
+                <option value="employee">Employee</option>
+                <option value="manager">Manager</option>
+                <option value="admin">Admin</option>
+            </select>
+            <input type="text" id="add-dept" placeholder="Enter Department (Optional)" class="w-full p-3 border rounded dark:bg-gray-700 dark:text-white">
+            <button type="submit" class="btn-primary px-4 py-2 rounded-lg font-medium">Add New User</button>
+        </form>
+        <table class="bg-white dark:bg-gray-800">
+            <thead>
+                <tr class="table-header">
+                    <th class="p-3">Email</th>
+                    <th class="p-3">Role</th>
+                    <th class="p-3">Department</th>
+                    <th class="p-3">Actions</th>
+                </tr>
+            </thead>
+            <tbody id="users-table"></tbody>
+        </table>
+        <button onclick="bulkImport()" class="mt-4 btn-primary px-4 py-2 rounded-lg font-medium">Bulk Import Users from CSV</button>
+    </section>
+    
+
+    <script src="/Project/Script/User Management.js"></script>
+</body>
+</html>
