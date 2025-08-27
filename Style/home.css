@@ -1,0 +1,38 @@
+body {
+      background-color: #fdfde3;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    header {
+      padding: 80px 20px;
+    }
+    h1 {
+      font-weight: bold;
+    }
+    .btn-success {
+      padding: 12px 30px;
+      font-size: 18px;
+      font-weight: 600;
+    }
+    .card {
+      border-radius: 12px;
+    }
+    footer {
+      background: #5d9ca98f;
+      color: rgb(54, 51, 51);
+      padding: 10px;
+      font-size: 14px;
+    }
+
+    /* Animation */
+    .floating {
+        border-radius: 15px;
+      animation: float 3s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+    }
