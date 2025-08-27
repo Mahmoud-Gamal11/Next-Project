@@ -1,0 +1,104 @@
+body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #f4f6f8;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 30px auto;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            padding: 32px 24px;
+        }
+        h1 {
+            text-align: center;
+            color: #2d3a4b;
+            margin-bottom: 8px;
+        }
+        .analytics {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+        .analytic-card {
+            background: #f0f4fa;
+            border-radius: 8px;
+            padding: 18px 28px;
+            min-width: 160px;
+            text-align: center;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+        }
+        .analytic-card h2 {
+            margin: 0;
+            font-size: 2rem;
+            color: #2d3a4b;
+        }
+        .analytic-card p {
+            margin: 6px 0 0 0;
+            color: #5c6b7a;
+            font-size: 1rem;
+        }
+        .actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            justify-content: center;
+            margin-bottom: 28px;
+        }
+        .actions input, .actions button {
+            padding: 10px 16px;
+            font-size: 1rem;
+            border-radius: 6px;
+            border: 1px solid #bfc9d1;
+            outline: none;
+        }
+        .actions input {
+            width: 180px;
+        }
+        .actions button {
+            background: #2d8cff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .actions button:disabled {
+            background: #bfc9d1;
+            cursor: not-allowed;
+        }
+        .actions button:hover:not(:disabled) {
+            background: #1769aa;
+        }
+        .attendance-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 18px;
+        }
+        .attendance-table th, .attendance-table td {
+            padding: 10px 8px;
+            border-bottom: 1px solid #e0e6ed;
+            text-align: center;
+        }
+        .attendance-table th {
+            background: #f0f4fa;
+            color: #2d3a4b;
+        }
+        .status-present { color: #2ecc40; font-weight: bold; }
+        .status-late { color: #ff9800; font-weight: bold; }
+        .status-absent { color: #e74c3c; font-weight: bold; }
+        @media (max-width: 800px) {
+            .container { padding: 12px 4px; }
+            .analytics { gap: 8px; }
+            .analytic-card { min-width: 120px; padding: 10px 8px; }
+            .actions input { width: 120px; }
+            .attendance-table th, .attendance-table td { font-size: 0.95rem; padding: 6px 2px; }
+        }
+        @media (max-width: 600px) {
+            .analytics, .actions { flex-direction: column; align-items: stretch; }
+            .analytic-card { width: 100%; }
+            .actions input, .actions button { width: 100%; margin-bottom: 8px; }
+        }

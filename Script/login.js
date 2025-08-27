@@ -10,7 +10,7 @@ function toggleForms() {
 // login function 
 
 function goToAnotherPage(){
-  window.location.href = "/Project/Pages/User Management.html"; 
+  window.location.href = "/Next-Project/Pages/dashboard.html"; 
 }
 
 // Function to show toast messages

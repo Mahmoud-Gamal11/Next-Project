@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Attendance Dashboard</title>
+    <link rel="stylesheet" href="/Next-Project/Style/dashboradStyl.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Employee Attendance Dashboard</h1>
+        <div class="analytics" id="analytics">
+            <!-- Analytics cards will be rendered here -->
+        </div>
+        <div class="actions">
+            <input type="text" id="employeeName" placeholder="Enter your name" />
+            <button id="checkInBtn">Check In</button>
+            <button id="checkOutBtn" disabled>Check Out</button>
+            <button onclick="window.location.href='/Next-Project/Pages/User Management.html'">User Management</button>
+        </div>
+        <div style="overflow-x:auto;">
+            <table class="attendance-table" id="attendanceTable">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Location</th>
+                        <th>Check In</th>
+                        <th>Status</th>
+                        <th>Check Out</th>
+                        <th>Work Hours</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Attendance records will be rendered here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="/Next-Project/Script/js_dashborad.js"></script>
+</body>
+</html>
