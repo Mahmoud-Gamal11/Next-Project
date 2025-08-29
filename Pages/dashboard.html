@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Employee Attendance Dashboard</title>
-    <link rel="stylesheet" href="/Style/dashboradStyl.css">
+    <link rel="stylesheet" href="../Style/dashboradStyl.css">
 </head>
+
 <body>
     <style>
         body {
@@ -74,6 +76,7 @@
             justify-content: center;
             flex-wrap: wrap;
         }
+
         nav li {
             margin: 0 1rem;
         }
@@ -92,7 +95,8 @@
             transform: scale(1.15);
             background-color: #064e3b;
         }
-        .logout:hover{
+
+        .logout:hover {
             /* transform: scale(1.01); */
             background-color: red;
         }
@@ -105,10 +109,10 @@
     </header>
     <nav>
         <ul>
-            <li><a href="/Pages/home.html">Home</a></li>
-            <li><a href="/Pages/dashboard.html">Dashboard</a></li>
-            <li><a href="/Pages/User Management.html">User-Management</a></li>
-            <li><a href="/Pages/login.html" class="logout" >Logout</a></li>
+            <li><a href="../Pages/home.html">Home</a></li>
+            <li><a href="../Pages/dashboard.html">Dashboard</a></li>
+            <li><a href="../Pages/User Management.html">User-Management</a></li>
+            <li><a href="../Pages/login.html" class="logout">Logout</a></li>
         </ul>
     </nav>
     <div class="container">
@@ -120,7 +124,6 @@
             <input type="text" id="employeeName" placeholder="Enter your name" />
             <button id="checkInBtn">Check In</button>
             <button id="checkOutBtn" disabled>Check Out</button>
-            <button onclick="window.location.href='/Next-Project/Pages/User Management.html'">User Management</button>
         </div>
         <div style="overflow-x:auto;">
             <table class="attendance-table" id="attendanceTable">
@@ -141,6 +144,7 @@
             </table>
         </div>
     </div>
-    <script src="/Script/js_dashborad.js"></script>
+    <script src="../Script/js_dashborad.js"></script>
 </body>
+
 </html>
